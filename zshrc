@@ -4,7 +4,7 @@ source ~/zsh-syntax-highlighting.plugin.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main regexp)
 typeset -A ZSH_HIGHLIGHT_REGEXP
 #Numbers
-#ZSH_HIGHLIGHT_REGEXP+=('[0-9]+' fg=173)
+ZSH_HIGHLIGHT_REGEXP+=('[-+]?[0-9]*\.[0-9]+|[0-9]' fg=173)
 
 #URL
 ZSH_HIGHLIGHT_REGEXP+=('^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]>
