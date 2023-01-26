@@ -26,3 +26,18 @@ ZSH_HIGHLIGHT_REGEXP+=('(2[0-3]|[0-1][0-9]):[0-5][0-9](:[0-5][0-9](\.[0-9]{3,6})
 
 #Size
 ZSH_HIGHLIGHT_REGEXP+=('[[:digit:]]+(\.[[:digit:]]+)?[[:space:]]?((([KkMmGgTtPpEeZzYy]([Ii]?[Bb])?)|[Bb])([Pp][Ss])?)' fg=177)
+
+#Generic Bad
+ZSH_HIGHLIGHT_REGEXP+=('(password|abnormal(ly)?|down|los(t|ing)|err(ors?)?|(den(y|ies|ied)?)|reject(ing|ed)?|drop(ped|s)?|(err\-)?disabled?|(timed?\-?out)|fail(s|ed|iure)?|disconnect(ed)?|unreachable|invalid|bad|notconnect|unusable|blk|inaccessible|wrong|collisions?|unsynchronized|mismatch|runts)' fg=160)
+
+#Generic Ambigious Bad
+ZSH_HIGHLIGHT_REGEXP+=('(no(pe)?|exit(ed)?|reset(t?ing)?|discard(ed|ing)?|block(ed|ing)?|filter(ed|ing)?|stop(p(ed|ing))?|never|bad)' fg=172)
+
+#Generic Not Too Bad
+ZSH_HIGHLIGHT_REGEXP+=('warning?' fg=178)
+
+#Generic Good
+ZSH_HIGHLIGHT_REGEXP+=('\b(up|ok(ay)?|permit(ed|s)?|accept(s|ed)?|enabled?|online|succe((ss(ful|fully)?)|ed(ed)?)?|connect(ed)?|reachable|valid|forwarding|synchronized)\b' fg=40)
+
+#Generic Ambigious Good
+ZSH_HIGHLIGHT_REGEXP+=('\b(ye(s|ah?|p)?|start(ed|ing)?|running|good)\b' fg=106)
