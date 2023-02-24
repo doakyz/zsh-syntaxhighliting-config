@@ -31,7 +31,7 @@ ZSH_HIGHLIGHT_REGEXP+=('[[:digit:]]+(\.[[:digit:]]+)?[[:space:]]?((([KkMmGgTtPpE
 ZSH_HIGHLIGHT_REGEXP+=('(password|abnormal(ly)?|down|los(t|ing)|err(ors?)?|(den(y|ies|ied)?)|reject(ing|ed)?|drop(ped|s)?|(err\-)?disabled?|(timed?\-?out)|fail(s|ed|iure)?|disconnect(ed)?|unreachable|invalid|bad|notconnect|unusable|blk|inaccessible|wrong|collisions?|unsynchronized|mismatch|runts)' fg=160)
 
 #Generic Ambigious Bad
-ZSH_HIGHLIGHT_REGEXP+=('(no(pe)?|exit(ed)?|reset(t?ing)?|discard(ed|ing)?|block(ed|ing)?|filter(ed|ing)?|stop(p(ed|ing))?|never|bad)' fg=172)
+ZSH_HIGHLIGHT_REGEXP+=(' exit(ed)?|reset(t?ing)?|discard(ed|ing)?|block(ed|ing)?|filter(ed|ing)?|stop(p(ed|ing))?|never|bad)' fg=172)
 
 #Generic Not Too Bad
 ZSH_HIGHLIGHT_REGEXP+=('warning?' fg=178)
